@@ -121,3 +121,16 @@ header nav ul li:hover > ul{
 
 /* FOOTER */
 
+footer {
+    width:100%;
+    position: fixed;
+    bottom: 0;
+    background: #252525;  
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-family: 'Ubuntu';
+    padding: 40px;
+}
