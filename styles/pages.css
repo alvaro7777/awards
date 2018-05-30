@@ -130,15 +130,107 @@ header nav ul li:hover > #pointer3{
     display: none;
 }
 
-.registerbox {
-    border: solid 1px #54D8F2;
-    width: 40vw;
+main {
+    padding: 16.4vh;
+    width: 30vw;
     margin: auto;
-    padding: 5vh 3vw;
-    border-radius: 20px;
     font-family: 'Didact Gothic';
     text-align: center;
-    margin-bottom: 5vh;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 4.5vh;
+    margin-bottom: 4vh;
+}
+
+main p a {
+    color: #009CB9;
+}
+
+.madrid {
+    padding: 13.9vh 13.4vw;
+    width: 30vw;
+    margin: auto;
+    font-family: 'Didact Gothic';
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.madrid h1 {
+    font-size: 4.5vh;
+    margin-bottom: 4vh;
+}
+
+.madrid p {
+    font-size: 1.8vh;
+}
+
+.madrid p a {
+    color: #009CB9;
+}
+
+.madrid img {
+    border-radius: 10000px;
+    height: 20vh;
+    width: 20vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.barcelona {
+    padding: 12.7vh 13.4vw;
+    width: 30vw;
+    margin: auto;
+    font-family: 'Didact Gothic';
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.barcelona h1 {
+    text-align: center;
+    font-size: 4.5vh;
+    margin-bottom: 4vh;
+}
+
+.barcelona p {
+    font-size: 1.8vh;
+}
+
+.barcelona p a {
+    color: #009CB9;
+}
+
+.barcelona img {
+    border-radius: 10000px;
+    height: 20vh;
+    width: 20vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.more {
+    padding: 16.7vh 13.4vw;
+    width: 30vw;
+    margin: auto;
+    font-family: 'Didact Gothic';
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.more h1 {
+    text-align: center;
+    font-size: 4.5vh;
+    margin-bottom: 4vh;
+}
+
+.more p {
+    font-size: 1.8vh;
+}
+
+.more a {
+    color: #009CB9;
+    display: block;
+    margin: 3vh;
+    font-size: 2.3vh;
 }
 
 /* FOOTER */
@@ -166,12 +258,52 @@ footer p {
     header nav ul li ul li {
         display: block;
     }
+    
+    main {
+        padding: 3vh 0;
+        width: 80vw;
+    }
+    
+    .madrid {
+        padding: 15.2vh 0;
+        width: 80vw;
+    }
+    
+    .barcelona {
+        padding: 12.6vh 0;
+        width: 80vw;
+    }
+    
+    .more {
+        padding: 16.5vh 0;
+        width: 80vw;
+    }
   
 }
 
 /* Moviles */
 
 @media screen and (max-width: 479px) {
+    
+    .more {
+        padding: 14.5vh 0;
+        width: 80vw;
+    }
+    
+    .madrid {
+        padding: 12vh 0;
+        width: 80vw;
+    }
+    
+    .barcelona {
+        padding: 4.8vh 0;
+        width: 80vw;
+    }
+    
+    main {
+        padding: 3vh 0;
+        width: 80vw;
+    }
     
     .separator {
         display: block;
@@ -181,13 +313,6 @@ footer p {
         position: absolute;
         top: 9vh;
         z-index: -1;
-    }
-    
-    .registerbox {
-        width: 100%;
-        border: none;
-        padding-top: 0;
-        padding-bottom: 0;
     }
     
     footer {
