@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>GO!</title>
-    <link rel="stylesheet" href="../styles/pages.css" type="text/css">
+    <link rel="stylesheet" href="../styles/forms.css" type="text/css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
@@ -12,25 +12,24 @@
             <ul>
                 <li><a href="#">X</a>
                     <ul class="submenu1">
-                        <li><a href="/index.html">HOME</a></li>
-                        <li><a href="/register.html">REGISTER</a></li>
-                        <li><a href="/recover.html">RECOVER PASSWORD</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="register.html">REGISTER OR RECOVER PASSWORD</a></li>
                     </ul>
                     <div id="pointer1"></div>
                 </li>
                 <li><a href="#">MAPS</a>
                     <ul class="submenu2">
-                        <li><a href="/maps/madrid.html">MADRID</a></li>
-                        <li><a href="/maps/barcelona.html">BARCELONA</a></li>
-                        <li><a href="/maps/more.html">MORE</a></li>
+                        <li><a href="maps/madrid.html">MADRID</a></li>
+                        <li><a href="maps/barcelona.html">BARCELONA</a></li>
+                        <li><a href="maps/more.html">MORE</a></li>
                     </ul>
                     <div id="pointer2"></div>
                 </li>
                 <li><a href="#">HELP</a>
                     <ul class="submenu3">
-                        <li><a href="/ayuda/faqs.html">FAQ'S</a></li>
-                        <li><a href="/ayuda/ticket.html">SEND A TICKET</a></li>
-                        <li><a href="/ayuda/tutorial.html">HOW TO PLAY</a></li>
+                        <li><a href="help/faqs.html">FAQ'S</a></li>
+                        <li><a href="help/ticket.html">SEND A TICKET</a></li>
+                        <li><a href="help/tutorial.html">HOW TO PLAY</a></li>
                     </ul>
                     <div id="pointer3"></div>
                 </li>
@@ -38,8 +37,25 @@
         </nav>
     </header>
         
-        <!-CONTENT->
-        
+        <div class="registerbox">
+            <h1>Send a Ticket</h1>
+            <p>Enter your email:</p>
+            <input type="text">
+            <p>Select your problem category:</p>
+            <select name="problem_category" size="1">
+                <option value="">Select category</option>
+                <option value="Profile"></option>
+                <option value="App bugs"></option>
+                <option value="Discounts"></option>
+                <option value="Connection"></option>
+                <option value="Other problem"></option>
+            </select>
+            <p>Describe your problem:</p>
+            <textarea name="problem_desc" id="problem_desc" cols="80" rows="10"></textarea>
+            <br><br>
+            <input type="submit" value="Send ticket">
+        </div>
+        <br>
     <footer>
         <p>GO! Copyright 2018 All rights reserved.</p>
     </footer>
