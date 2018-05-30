@@ -1,39 +1,215 @@
-/* CONTENIDOS */
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Special+Elite|Gugi');
 
-main {
-    margin-top: 95px;
-    text-align: center;
-    padding-top: 60px;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    font-family: 'Gugi';
-    font-size: 40px;
-    color: #fff;
-    text-shadow: 3px 3px rgba(0,0,0,0.15);
-}
-
-h2 {
-    margin-top: 20px;
-    font-family: 'Gugi';
-    font-size: 20px;
-    color: #fff;
-    text-shadow: 3px 3px rgba(0,0,0,0.15);
-    text-transform: uppercase;
-}
-
-.registerbox {
-    margin: auto;
-    width: 50%;
+body {
     background: #fff;
 }
 
-.registerbox p {
-    font-family: 'Ubuntu';
+/* MENUS */
+
+header {
+    width:100%;
+}
+
+    /* MENU PRINCIPAL */
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+    z-index: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 2vh 1.3vw;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 2.4vh;
+}
+
+/* SUBMENUS GENERAL */
+
+header nav ul li ul {
+    background: red;
+    opacity: 0;
+    width: 100%;
+    top: 8vh;
+    left: 26.9vw;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    border-style: none;
+    width: 23vw;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+header nav ul li ul li a {
+    font-size: 1.8vh;
     color: #fff;
 }
 
-.registerbox input {
-    border-radius: 5px;
-    padding: 5px 15px;
+header nav ul li:hover > ul{
+    top: 8vh;
+    z-index: 0; 
+    opacity: 1;
+}
+
+header nav ul li:hover > #pointer1{
+    opacity: 1;
+}
+
+header nav ul li:hover > #pointer2{
+    opacity: 1;
+}
+
+header nav ul li:hover > #pointer3{
+    opacity: 1;
+}
+
+/* Submenus */
+
+.submenu1 {
+    background: #54D8F2;
+}
+
+.submenu2 {
+    background: #54F267;
+    left: 38vw;
+}
+
+.submenu3 {
+    background: #F25454;
+    left: 47.4vw;
+}
+
+#pointer1 {
+    border: solid 1.1vh transparent;
+    border-bottom-color: #54D8F2;
+    position: relative;
+    top: -1.27vh;
+    left: 1.15vw;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    width: 0;
+}
+
+#pointer2 {
+    border: solid 1.1vh transparent;
+    border-bottom-color: #54F267;
+    position: relative;
+    top: -1.27vh;
+    left: 2.4vw;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    width: 0;
+}
+
+#pointer3 {
+    border: solid 1.1vh transparent;
+    border-bottom-color: #F25454;
+    position: relative;
+    top: -1.27vh;
+    left: 2.13vw;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    width: 0;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    margin: 0 auto;
+    right: 37.5%;
+    border-top: 1px rgba(0,0,0,0.2) solid;
+    width:45vw;
+    margin-top: 10.93vh;
+}
+
+footer p {
+    color: rgba(0,0,0,0.8);
+    text-align: center;
+    font-family: 'Didact Gothic';
+    padding: 2vh;
+    font-size: 1.7vh;
+}
+
+/*Tablets*/
+
+@media (min-width: 480px) and (max-width: 1280px) {
+  
+    header nav ul li ul li {
+        display: block;
+    }
+  
+}
+
+/* Moviles */
+
+@media screen and (max-width: 479px) {
+    
+    footer {
+        display: none;
+    }
+    
+    .promotext {
+        margin: 12.5vh auto;
+    }
+    
+    header nav ul li a {
+        font-size: 3.5vh;
+    }
+    
+    header nav ul li ul li a {
+        font-size: 2.4vh;
+    }
+    
+    header nav ul li ul {
+        width: 100vw;
+        border-radius: 0;
+    }
+    
+    .submenu1 {
+        left: 0;
+    }
+    
+    .submenu2 {
+        left: 0;
+    }
+    
+    .submenu3 {
+        left: 0;
+    }
+    
+    #pointer1 {
+        border: solid 1.3vh transparent;
+        border-bottom-color: #54D8F2;
+        top: -3.13vh;
+        left: 0.73vw;
+    }
+    
+    #pointer2 {
+        border: solid 1.3vh transparent;
+        border-bottom-color: #54F267;
+        top: -3.13vh;
+        left: 8vw;
+    }
+    
+    #pointer3 {
+        border: solid 1.3vh transparent;
+        border-bottom-color: #F25454;
+        top: -3.13vh;
+        left: 6.5vw;
+    }
+    
 }
