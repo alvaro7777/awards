@@ -1,0 +1,39 @@
+/* CONTENIDOS */
+
+main {
+    margin-top: 95px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+h1 {
+    font-family: 'Gugi';
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 3px 3px rgba(0,0,0,0.15);
+}
+
+h2 {
+    margin-top: 20px;
+    font-family: 'Gugi';
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 3px 3px rgba(0,0,0,0.15);
+    text-transform: uppercase;
+}
+
+.registerbox {
+    margin: auto;
+    width: 50%;
+    background: #fff;
+}
+
+.registerbox p {
+    font-family: 'Ubuntu';
+    color: #fff;
+}
+
+.registerbox input {
+    border-radius: 5px;
+    padding: 5px 15px;
+}

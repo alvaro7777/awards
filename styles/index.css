@@ -1,56 +1,195 @@
-/* CONTENIDOS */
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Special+Elite|Gugi');
 
-main {
-    margin-top: 95px;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.boxred {
-    background: #F25454;
-    padding: 20px 40px;
+body {
+    background: #fff;
+}
+
+/* MENUS */
+
+header {
+    width:100%;
+}
+
+    /* MENU PRINCIPAL */
+
+header nav ul {
+    list-style: none;
     text-align: center;
-    font-family: Gugi;
+    z-index: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 2vh 1.3vw;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 2.4vh;
+}
+
+/* SUBMENUS GENERAL */
+
+header nav ul li ul {
+    background: red;
+    opacity: 0;
+    width: 100%;
+    top: 8vh;
+    left: 26.9vw;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+    border-style: none;
+    width: 23vw;
+    border-radius: 4px;
+}
+
+header nav ul li ul li a {
+    font-size: 1.8vh;
     color: #fff;
 }
 
-.boxred h1 {
-    padding: 5px 0 60px;
-    font-size: 80px;
+header nav ul li:hover > ul{
+    top: 8vh;
+    z-index: 0; 
+    opacity: 1;
 }
 
-.boxred p {
-    padding: 5px;
+header nav ul li:hover > #pointer1{
+    opacity: 1;
 }
 
-.p1{
-    margin-top: 60px;
-    height: 20px;
+header nav ul li:hover > #pointer2{
+    opacity: 1;
 }
 
-.p2 {
-    font-size: 20px;
+#pointer1 {
+    border: solid 1.1vh transparent;
+    border-bottom-color:red;
+    position: relative;
+    top: -1.3vh;
+    left: 1.15vw;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    width: 0;
 }
 
-.boxred img {
-    height: 55px;
-    padding-bottom: 45px;
-}
-
-.innerbox {
-    display: inline-block;
-    width: 50px;
-    height: 20px;
-}
-
-.boxred .left {
-    left: 100px;
-    top: 120px;
+#pointer2 {
+    border: solid 7px transparent;
+    border-bottom-color: green;
     position: absolute;
-    height: 400px;
+    top: 5.9vh;
+    left: 48.5vw;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
 }
 
-.boxred .right {
-    right: 110px;
-    top: 110px;
-    position: absolute;
-    height: 400px;
+#pointer3 {
+    border:solid 7px transparent;
+    border-bottom-color:red;
+    position:absolute;
+    top: 5.9vh;
+    left: 43.85vw;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+/* Promo */
+
+.promotext {
+    margin: 11vh auto 0;
+    text-align: center;
+    color: #000;
+    font-family: 'Special Elite';
+}
+
+.promotext h1 {
+    margin-bottom: 1vh;
+    font-size: 24vh;
+}
+
+.promotext h2 {
+    font-size: 5vh;
+    line-height: 6vh;
+}
+
+.promotext h3 {
+    margin: 5vh;
+    font-family: 'Didact Gothic';
+    letter-spacing: 1px;
+    font-size: 3.5vh;
+}
+
+.getapp {
+    text-align: center;
+}
+
+.getapp img {
+    height: 6vh;
+    
+}
+
+.getapp .img1 {
+    margin-right: 6vw;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 0 auto;
+    right: 37.5%;
+    border-top: 1px rgba(0,0,0,0.2) solid;
+    width:45vw;
+    margin-top: 10.93vh;
+}
+
+footer p {
+    color: rgba(0,0,0,0.8);
+    text-align: center;
+    font-family: 'Didact Gothic';
+    padding: 2vh;
+    font-size: 1.7vh;
+}
+
+/* Moviles */
+
+@media screen and (max-width: 479px) {
+    
+    footer {
+        display: none;
+    }
+    
+    .promotext {
+        margin: 12.5vh auto;
+    }
+    
+    header nav ul li a {
+        font-size: 3.5vh;
+    }
+    
+    header nav ul li ul li a {
+        font-size: 2.6vh;
+    }
+    
+    header nav ul li ul {
+        width: 100%;
+        left: 0;
+        border-radius: 0;
+    }
+    
+    #pointer1 {
+        border: solid 1.3vh transparent;
+        border-bottom-color: red;
+        top: -3.13vh;
+        left: 0.35vh;
+    }
+    
 }
