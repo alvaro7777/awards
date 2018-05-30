@@ -45,7 +45,6 @@ header nav ul li ul {
     top: 8vh;
     left: 26.9vw;
     position: absolute;
-    z-index: -1;
     transition: all 0.5s ease-in-out;
     border-style: none;
     width: 23vw;
@@ -71,11 +70,31 @@ header nav ul li:hover > #pointer2{
     opacity: 1;
 }
 
+header nav ul li:hover > #pointer3{
+    opacity: 1;
+}
+
+/* Submenus */
+
+.submenu1 {
+    background: #54D8F2;
+}
+
+.submenu2 {
+    background: #54F267;
+    left: 38vw;
+}
+
+.submenu3 {
+    background: #F25454;
+    left: 47.4vw;
+}
+
 #pointer1 {
     border: solid 1.1vh transparent;
-    border-bottom-color:red;
+    border-bottom-color: #54D8F2;
     position: relative;
-    top: -1.3vh;
+    top: -1.27vh;
     left: 1.15vw;
     transition: all 0.5s ease-in-out;
     opacity: 0;
@@ -83,29 +102,31 @@ header nav ul li:hover > #pointer2{
 }
 
 #pointer2 {
-    border: solid 7px transparent;
-    border-bottom-color: green;
-    position: absolute;
-    top: 5.9vh;
-    left: 48.5vw;
+    border: solid 1.1vh transparent;
+    border-bottom-color: #54F267;
+    position: relative;
+    top: -1.27vh;
+    left: 2.4vw;
     transition: all 0.5s ease-in-out;
     opacity: 0;
+    width: 0;
 }
 
 #pointer3 {
-    border:solid 7px transparent;
-    border-bottom-color:red;
-    position:absolute;
-    top: 5.9vh;
-    left: 43.85vw;
+    border: solid 1.1vh transparent;
+    border-bottom-color: #F25454;
+    position: relative;
+    top: -1.27vh;
+    left: 2.13vw;
     transition: all 0.5s ease-in-out;
     opacity: 0;
+    width: 0;
 }
 
 /* Promo */
 
 .promotext {
-    margin: 11vh auto 0;
+    margin: 9.1vh auto 0;
     text-align: center;
     color: #000;
     font-family: 'Special Elite';
@@ -159,6 +180,21 @@ footer p {
     font-size: 1.7vh;
 }
 
+/*Tablets*/
+
+@media (min-width: 480px) and (max-width: 1280px) {
+  
+    header nav ul li ul li {
+        display: block;
+    }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
 /* Moviles */
 
 @media screen and (max-width: 479px) {
@@ -176,20 +212,45 @@ footer p {
     }
     
     header nav ul li ul li a {
-        font-size: 2.6vh;
+        font-size: 2.4vh;
     }
     
     header nav ul li ul {
-        width: 100%;
-        left: 0;
+        width: 100vw;
         border-radius: 0;
+    }
+    
+    .submenu1 {
+        left: 0;
+    }
+    
+    .submenu2 {
+        left: 0;
+    }
+    
+    .submenu3 {
+        left: 0;
     }
     
     #pointer1 {
         border: solid 1.3vh transparent;
-        border-bottom-color: red;
+        border-bottom-color: #54D8F2;
         top: -3.13vh;
-        left: 0.35vh;
+        left: 0.73vw;
+    }
+    
+    #pointer2 {
+        border: solid 1.3vh transparent;
+        border-bottom-color: #54F267;
+        top: -3.13vh;
+        left: 8vw;
+    }
+    
+    #pointer3 {
+        border: solid 1.3vh transparent;
+        border-bottom-color: #F25454;
+        top: -3.13vh;
+        left: 6.5vw;
     }
     
 }
