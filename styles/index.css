@@ -126,7 +126,7 @@ header nav ul li:hover > #pointer3{
 /* Promo */
 
 .promotext {
-    margin: 3vh auto 0;
+    margin: 2.2vh auto 0;
     text-align: center;
     color: #000;
     font-family: 'Didact Gothic';
@@ -180,6 +180,11 @@ footer p {
     text-align: center;
     font-family: 'Didact Gothic';
     padding: 2vh;
+    font-size: 1.7vh;
+}
+
+footer a {
+    color: rgba(0,0,0,0.8);
     font-size: 1.7vh;
 }
 

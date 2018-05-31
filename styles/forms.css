@@ -277,6 +277,12 @@ footer p {
     font-size: 1.7vh;
 }
 
+footer a {
+    color: rgba(0,0,0,0.8);
+    font-size: 1.7vh;
+    
+}
+
 /*Tablets*/
 
 @media (min-width: 480px) and (max-width: 1280px) {
